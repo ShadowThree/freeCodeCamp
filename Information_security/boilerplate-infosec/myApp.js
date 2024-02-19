@@ -1,7 +1,8 @@
 const express = require('express');
-const helmet = require('helmet');
+const helmet = require('helmet');   // import helmet lib
 const app = express();
-app.use(helmet.hidePoweredBy());
+app.use(helmet.hidePoweredBy());    // in case the known vulnerabilities in Express/Node
+app.use(helmet.frameguard({ action: 'deny' })); // in case clickjacking attack
 
 
 

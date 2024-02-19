@@ -14,7 +14,7 @@
 7. 提交结果：在 [本课程页面](https://www.freecodecamp.org/learn/information-security/information-security-with-helmetjs/install-and-require-helmet) 的 `Solution Link` 中输入 `http://localhost:3000` 并确认。
 
 ### Lesson2
-1. 将 `boilerplate-infosec/myApp.js` 修改如下：
+1. 将 `boilerplate-infosec/myApp.js` 的头几行修改如下：
 ```js
 const express = require('express');
 const helmet = require('helmet');
@@ -24,3 +24,16 @@ app.use(helmet.hidePoweredBy());
 2. 运行：`npm start`
 3. 查看运行结果：在浏览器地址栏输入：`http://localhost:3000`
 4. 提交结果：在 [本课程页面](https://www.freecodecamp.org/learn/information-security/information-security-with-helmetjs/hide-potentially-dangerous-information-using-helmet-hidepoweredby) 的 `Solution Link` 中输入 `http://localhost:3000` 并确认。
+
+### Lesson3
+1. 将 `boilerplate-infosec/myApp.js` 的头几行修改如下：
+```js
+const express = require('express');
+const helmet = require('helmet');
+const app = express();
+app.use(helmet.hidePoweredBy());
+app.use(helmet.frameguard({action: 'deny'}));
+```
+2. 运行：`npm start`
+3. 查看运行结果：在浏览器地址栏输入：`http://localhost:3000`
+4. 提交结果：在 [本课程页面](https://www.freecodecamp.org/learn/information-security/information-security-with-helmetjs/mitigate-the-risk-of-clickjacking-with-helmet-frameguard) 的 `Solution Link` 中输入 `http://localhost:3000` 并确认。 
