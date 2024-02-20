@@ -5,6 +5,7 @@ app.use(helmet.hidePoweredBy());   // in case the known vulnerabilities in Expre
 app.use(helmet.frameguard({ action: 'deny' })); // in case clickjacking attack
 app.use(helmet.xssFilter({}));    // in case Cross-site scripting attack
 app.use(helmet.noSniff());        // in case sniffing
+app.use(helmet.ieNoOpen());       // set IE do NOT open the downloaded HTML
 
 
 
