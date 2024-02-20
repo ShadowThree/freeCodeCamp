@@ -51,3 +51,10 @@ app.use(helmet.xssFilter({}));
 2. 运行：`npm start`
 3. 查看运行结果：在浏览器地址栏输入：`http://localhost:3000`
 4. 提交结果：在 [本课程页面](https://www.freecodecamp.org/learn/information-security/information-security-with-helmetjs/mitigate-the-risk-of-cross-site-scripting-xss-attacks-with-helmet-xssfilter) 的 `Solution Link` 中输入 `http://localhost:3000` 并确认。 
+
+### Lesson5
+1. 将 `boilerplate-infosec/myApp.js` 在前面的基础上，添加如下代码：
+```js
+app.use(helmet.noSniff());
+```
+2. 按之前步骤，运行并提交结果。

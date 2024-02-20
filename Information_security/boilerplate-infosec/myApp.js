@@ -1,9 +1,10 @@
 const express = require('express');
-const helmet = require('helmet');   // import helmet lib
+const helmet = require('helmet'); // import helmet lib
 const app = express();
-app.use(helmet.hidePoweredBy());    // in case the known vulnerabilities in Express/Node
+app.use(helmet.hidePoweredBy());   // in case the known vulnerabilities in Express/Node
 app.use(helmet.frameguard({ action: 'deny' })); // in case clickjacking attack
 app.use(helmet.xssFilter({}));    // in case Cross-site scripting attack
+app.use(helmet.noSniff());        // in case sniffing
 
 
 
