@@ -59,9 +59,17 @@ app.use(helmet.noSniff());
 ```
 2. 按之前步骤，运行并提交结果。
 
-### Lesson5
+### Lesson6
 1. 将 `boilerplate-infosec/myApp.js` 在前面的基础上，添加如下代码：
 ```js
 app.use(helmet.ieNoOpen());
+```
+2. 按之前步骤，运行并提交结果。
+
+### Lesson7
+1. 将 `boilerplate-infosec/myApp.js` 在前面的基础上，添加如下代码：
+```js
+var timeInSec = 90 * 24 * 60 * 60;
+app.use(helmet.hsts({ maxAge: timeInSec, force: true }));
 ```
 2. 按之前步骤，运行并提交结果。

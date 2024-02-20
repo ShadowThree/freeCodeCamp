@@ -7,6 +7,9 @@ app.use(helmet.xssFilter({}));    // in case Cross-site scripting attack
 app.use(helmet.noSniff());        // in case sniffing
 app.use(helmet.ieNoOpen());       // set IE do NOT open the downloaded HTML
 
+var timeInSec = 90 * 24 * 60 * 60;
+app.use(helmet.hsts({ maxAge: timeInSec, force: true })); // in case protocol downgrade attacks and cookie hijacking
+
 
 
 
