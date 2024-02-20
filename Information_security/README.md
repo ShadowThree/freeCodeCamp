@@ -73,3 +73,10 @@ var timeInSec = 90 * 24 * 60 * 60;
 app.use(helmet.hsts({ maxAge: timeInSec, force: true }));
 ```
 2. 按之前步骤，运行并提交结果。
+
+### Lesson8
+1. 将 `boilerplate-infosec/myApp.js` 在前面的基础上，添加如下代码：
+```js
+app.use(helmet.dnsPrefetchControl());
+```
+2. 按之前步骤，运行并提交结果。

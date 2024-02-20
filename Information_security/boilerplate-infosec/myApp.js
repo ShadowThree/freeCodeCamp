@@ -10,6 +10,8 @@ app.use(helmet.ieNoOpen());       // set IE do NOT open the downloaded HTML
 var timeInSec = 90 * 24 * 60 * 60;
 app.use(helmet.hsts({ maxAge: timeInSec, force: true })); // in case protocol downgrade attacks and cookie hijacking
 
+app.use(helmet.dnsPrefetchControl()); // disable DNS prefetching, at the cost of a performance penalty
+
 
 
 
