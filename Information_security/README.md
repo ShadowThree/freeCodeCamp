@@ -87,3 +87,10 @@ app.use(helmet.dnsPrefetchControl());
 app.use(helmet.noCache());
 ```
 2. 按之前步骤，运行并提交结果。
+
+### Lesson10
+1. 将 `boilerplate-infosec/myApp.js` 在前面的基础上，添加如下代码：
+```js
+app.use(helmet.contentSecurityPolicy({ directives: { defaultSrc: ["'self'"], scriptSrc: ["'self'", "trusted-cdn.com"] } }));
+```
+2. 按之前步骤，运行并提交结果。
