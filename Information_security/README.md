@@ -80,3 +80,10 @@ app.use(helmet.hsts({ maxAge: timeInSec, force: true }));
 app.use(helmet.dnsPrefetchControl());
 ```
 2. 按之前步骤，运行并提交结果。
+
+### Lesson9
+1. 将 `boilerplate-infosec/myApp.js` 在前面的基础上，添加如下代码：
+```js
+app.use(helmet.noCache());
+```
+2. 按之前步骤，运行并提交结果。

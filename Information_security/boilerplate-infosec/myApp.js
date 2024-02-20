@@ -11,6 +11,7 @@ var timeInSec = 90 * 24 * 60 * 60;
 app.use(helmet.hsts({ maxAge: timeInSec, force: true })); // in case protocol downgrade attacks and cookie hijacking
 
 app.use(helmet.dnsPrefetchControl()); // disable DNS prefetching, at the cost of a performance penalty
+app.use(helmet.noCache());  // disable caching on client’s browser(so only the latest version is accessable)
 
 
 
