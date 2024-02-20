@@ -98,3 +98,13 @@ app.use(helmet.contentSecurityPolicy({ directives: { defaultSrc: ["'self'"], scr
 ### Lesson11
 1. 介绍了 `app.use(helmet());`
 
+### Lesson12
+> 注意：这里使用的新的工程模板，和上面课程的模板不一样了！！！
+1. 在 `freeCodeCamp/Information_security` 目录下，执行 `git clone https://github.com/freeCodeCamp/boilerplate-bcrypt.git` 下载工程模板；
+2. 检查 `package.json` 文件中是否有 `"bcrypt": "5.0.1"`(模板工程中应该已经有了)；
+3. 在 `server.js` 中加上 `const bcrypt = require('bcrypt');` 导入 `bcrypt` 库；
+4. 运行 `npm install` 安装依赖库；
+5. 运行 `npm audit fix --force` 修复漏洞；
+6. 运行 `npm start` 启动 `APP`;
+7. 按之前的步骤，提交结果。
+
