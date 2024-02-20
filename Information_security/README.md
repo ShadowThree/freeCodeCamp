@@ -37,3 +37,17 @@ app.use(helmet.frameguard({action: 'deny'}));
 2. 运行：`npm start`
 3. 查看运行结果：在浏览器地址栏输入：`http://localhost:3000`
 4. 提交结果：在 [本课程页面](https://www.freecodecamp.org/learn/information-security/information-security-with-helmetjs/mitigate-the-risk-of-clickjacking-with-helmet-frameguard) 的 `Solution Link` 中输入 `http://localhost:3000` 并确认。 
+
+### Lesson4
+1. 将 `boilerplate-infosec/myApp.js` 的头几行修改如下：
+```js
+const express = require('express');
+const helmet = require('helmet');
+const app = express();
+app.use(helmet.hidePoweredBy());
+app.use(helmet.frameguard({action: 'deny'}));
+app.use(helmet.xssFilter({}));
+```
+2. 运行：`npm start`
+3. 查看运行结果：在浏览器地址栏输入：`http://localhost:3000`
+4. 提交结果：在 [本课程页面](https://www.freecodecamp.org/learn/information-security/information-security-with-helmetjs/mitigate-the-risk-of-cross-site-scripting-xss-attacks-with-helmet-xssfilter) 的 `Solution Link` 中输入 `http://localhost:3000` 并确认。 
