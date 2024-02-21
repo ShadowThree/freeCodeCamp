@@ -108,3 +108,16 @@ app.use(helmet.contentSecurityPolicy({ directives: { defaultSrc: ["'self'"], scr
 6. 运行 `npm start` 启动 `APP`;
 7. 按之前的步骤，提交结果。
 
+### Lesson13
+1. 在 `server.js` 的 `ASYNC` 注释区间加上如下代码：
+```js
+//START_ASYNC -do not remove notes, place code between correct pair of notes.
+bcrypt.hash(myPlaintextPassword, saltRounds, (err, hash) => {
+    console.log(hash);
+    bcrypt.compare(myPlaintextPassword, hash, (err, res) => {
+        console.log(res);
+    });
+});
+//END_ASYNC
+```
+2. 按之前步骤，运行并提交结果。
