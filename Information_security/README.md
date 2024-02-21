@@ -121,3 +121,15 @@ bcrypt.hash(myPlaintextPassword, saltRounds, (err, hash) => {
 //END_ASYNC
 ```
 2. 按之前步骤，运行并提交结果。
+
+### Lesson14
+1. 在 `server.js` 的 `SYNC` 注释区间加上如下代码：
+```js
+//START_SYNC
+let hash = bcrypt.hashSync(myPlaintextPassword, saltRounds);
+console.log(hash);
+let result = bcrypt.compareSync(myPlaintextPassword, hash);
+console.log(result);
+//END_SYNC
+```
+2. 按之前步骤，运行并提交结果。
