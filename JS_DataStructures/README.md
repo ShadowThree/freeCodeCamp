@@ -62,3 +62,11 @@
 3. `strong` 用于加粗字体；
 4. `button` 用于生成按钮；
 
+### Lesson19-20
+1. `Javascript` 通过 `Document Object Model(DOM)` 和 `HTML` 进行交互；
+> JavaScript interacts with the HTML using the Document Object Model, or DOM. The DOM is a tree of objects that represents the HTML. You can access the HTML using the `document` object, which represents your entire HTML document.
+2. `document.querySelector()` 用于指定 `HTML` 中特定的元素；
+> One method for finding specific elements in your HTML is using the `querySelector()` method. The `querySelector()` method takes a CSS selector as an argument and returns the first element that matches that selector.
+> Remember that CSS id selectors are prefixed with a `#`.
+3. `HTML` 中导入 `javascript` 脚本时，必须放在最后(`</body>`前面)，这样才能保证在执行脚本时，浏览器已经读取了整个 `HTML` 文件；
+
