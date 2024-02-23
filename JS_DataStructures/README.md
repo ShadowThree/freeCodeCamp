@@ -42,3 +42,10 @@
 2. 双击 `DragonRepeller.html` 文件，会在浏览器打开；按 `F12` 或者 `Ctrl+Shift+I` 打开前端调试页面，选择 `Console` 就可以看到网页输出的日志了。
 ![网页调试](./res/L3_debug.png)
 3. 发现上面图片有一个 `Failed to load resource` 的错误，这是由于这个 `DragonRepeller.html` 引用了一个 `styles.css` 文件，再新建一个 `styles.css` 文件就可以了。
+
+### Lesson4
+1. 为了让文件更便于管理，将 `javascript` 代码放到一个单独的文件中；新建一个 `script.js` 文件，并通过以下方式引入：
+```html
+<script src="./script.js">
+</script>
+```
