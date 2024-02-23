@@ -43,9 +43,15 @@
 ![网页调试](./res/L3_debug.png)
 3. 发现上面图片有一个 `Failed to load resource` 的错误，这是由于这个 `DragonRepeller.html` 引用了一个 `styles.css` 文件，再新建一个 `styles.css` 文件就可以了。
 
-### Lesson4
+### Lesson4-5
 1. 为了让文件更便于管理，将 `javascript` 代码放到一个单独的文件中；新建一个 `script.js` 文件，并通过以下方式引入：
 ```html
 <script src="./script.js">
 </script>
 ```
+
+### Lesson6-14
+1. `javascript` 变量命名方式为驼峰法，比如：`thisIsCamelCase`, `currentWeapon`;
+2. 每行以分号 `;` 结束;
+3. 字符串需要包含在双引号("")、单引号('')、反引号(\`\`)中；
+4. 数组的定义：`let array = ["str1", "str2", "str3"];
