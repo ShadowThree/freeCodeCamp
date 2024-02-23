@@ -60,7 +60,7 @@
 1. `div` 元素用于指定 `CSS` 风格；
 2. `span` 元素用于设置文本颜色；
 3. `strong` 用于加粗字体；
-4. `button` 用于生成按钮；
+4. `button` 用于产生按钮；
 
 ### Lesson19-20
 1. `Javascript` 通过 `Document Object Model(DOM)` 和 `HTML` 进行交互；
@@ -69,4 +69,8 @@
 > One method for finding specific elements in your HTML is using the `querySelector()` method. The `querySelector()` method takes a CSS selector as an argument and returns the first element that matches that selector.
 > Remember that CSS id selectors are prefixed with a `#`.
 3. `HTML` 中导入 `javascript` 脚本时，必须放在最后(`</body>`前面)，这样才能保证在执行脚本时，浏览器已经读取了整个 `HTML` 文件；
+
+### Lesson21-24
+1. 不需要重新赋值的变量，通过 `const` 声明；
+2. `const` 变量被修改时，`JS` 会报异常；
 
