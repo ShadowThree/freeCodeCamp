@@ -80,3 +80,15 @@
 3. `CSS`中可以用选择器列表，同时给两个对象定义相同的样式；
 4. `CSS`中，通过属性 `display: none;` 可以隐藏指定的对象不显示；
 5. `CSS`中，通过属性 `cursor: pointer;` 可以设置鼠标为手性图标；
+
+### Lesson33-155
+1. `javascript`中，通过`button.onclick = function;`绑定函数；
+2. `javascript`中，通过`button.innerText = "newStr`修改按钮文本；
+3. `javascript`中，通过`function funName() {}`定义函数；
+4. `javascript`中，通过 `[]` 定义数组；
+5. `javascript`中，通过 `{}` 定义对象，在对象中可以加入`key-value`；`key`中有空格时需要用`""`括起来；
+6. 通过`push()`方式向数组追加元素；`pop()`删除数组最后一个元素；`shift()`删除数组第一个元素并返回这个删除的元素；
+7. `JS`中通过`idName.style.propertyName`可以修改`CSS`文件中的属性值；(step 115)
+8. `JS`中，`Math.random()`将生成一个`[0,1)`的随机数；`Math.floor()`向下取整；(step 121)
+9. [`innerText, innerHTML, textContent`的区别](https://www.freecodecamp.org/news/innerhtml-vs-innertext-vs-textcontent/) (step 138)
+10. `||`操作符中，只有左边结果为`Nan`,`null`,`undefined`,`0`,`-0`,`0n`,`""`和`false`时，才会计算右边的表达式；
