@@ -92,3 +92,6 @@
 8. `JS`中，`Math.random()`将生成一个`[0,1)`的随机数；`Math.floor()`向下取整；(step 121)
 9. [`innerText, innerHTML, textContent`的区别](https://www.freecodecamp.org/news/innerhtml-vs-innertext-vs-textcontent/) (step 138)
 10. `||`操作符中，只有左边结果为`Nan`,`null`,`undefined`,`0`,`-0`,`0n`,`""`和`false`时，才会计算右边的表达式；
+
+### Lesson156-174
+1. `array.includes(number)`用于判断数组中是否含有某个元素；
